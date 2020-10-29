@@ -81,22 +81,22 @@ body{
     background-color: #cdcdcc;
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
     margin-left:37px;
-    /* height:38px; */
+}
+.search-dropdown:focus{
+    outline-style: none;
 }
 .account{
     display: flex;
 }
 .account-button{
-    padding-left:19px;
-    padding-right:12px;
     margin-left:26px;
     background-color: #f16d7f;
     border-style: none;
-    flex-basis: 130px;
+    width: 130px;
     height: 38px;
     color:white;
     line-height: 32px;
-    text-align: right;
+    text-align: center;
     color: #ffffff;
     font-size: 0.938rem;
     font-weight: 400;
@@ -111,9 +111,7 @@ body{
 .account-button:focus{
     outline-style:none;
 }
-.link-cart{
-    /* как опустить телегу на нижнюю линию кнопки? */
-}
+
 .header-line{
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.17);
     border: 0.063rem solid #ececec;
@@ -122,8 +120,6 @@ body{
 .nav-wrapper{
     margin:0 auto;
     width:100%;
-    /* padding-left:230px;
-    padding-right:230px; */
     height: 51px;
     display:flex;
     justify-content:center;
@@ -163,14 +159,8 @@ body{
 }
 .promo-wrapper{
     width:100%;
-    /* padding-left:230px;
-    padding-right:230px; */
     margin:0 auto;
     height: 665px;
-    /* background-color:#e8e8e8;
-    background-image: url("/img/main-promo.png");
-    background-position: cover;
-    background-repeat: no-repeat; */
     display: flex;
     align-items: center;
 }
@@ -263,7 +253,6 @@ body{
     margin:0 auto;
     display: flex;
     flex-flow:column;
-    /* justify-content: center; */
     align-items: center;
     margin-bottom:100px;
 }
@@ -317,7 +306,7 @@ body{
     margin-bottom:21px;
 }
 .pink-btn{
-    display: block;
+    display: inline-block;
     height: 48px;
     width: 212px;
     padding:0;
