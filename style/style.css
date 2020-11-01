@@ -302,6 +302,51 @@ body{
     text-transform: uppercase;
     padding-left:14px;
 }
+.f-product-card{
+    position: relative;
+    z-index: 1;
+}
+/* add to cart div */
+.hover-effect{ 
+    position:absolute;
+    width: 263px;
+    height: 281px;
+    display: none;
+}
+.f-h-bg,.f-h-btn,.f-h-icon{
+    position: inherit;
+}
+.f-h-btn{
+    left:30%;
+    top:45%;
+    padding:0;
+    width: 123px;
+    height: 39px;
+    z-index: 3;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.813rem;
+    font-weight: 700;
+    background:none;
+    border:1px solid white;
+    line-height: 39px;
+    
+}
+.f-h-btn:hover{
+    background-color:#f16d7f;
+}
+.fh-text{
+    display: block;
+    margin-left:35px;
+    
+}
+.f-h-bg{
+    z-index:2;
+}
+.f-h-icon{
+    top:8px;
+    left:5px;
+}
 .p-price{
     color: #f16d7f;
     font-size: 1rem;
