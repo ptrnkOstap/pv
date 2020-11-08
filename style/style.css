@@ -971,8 +971,11 @@ body {
 .trending-list-item {
   list-style-type: none;
   display: inline-block;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.trending-list-item:not(:nth-child(3n)):after {
+  content: " |";
 }
 
 .size-filter {
