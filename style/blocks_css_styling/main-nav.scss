@@ -1,0 +1,32 @@
+.nav-wrapper{
+  @include wrapper-width-and-centering;
+  height: 51px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.nav-list{
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.nav-list-item{
+  text-align: center;
+  align-items:center;
+}
+.nav-link{
+  text-decoration:none;
+  display: block;
+  padding-left:20px;
+  padding-right:20px;
+  text-align: center;
+  line-height: 51px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #222222;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-bottom:3px solid transparent;
+}

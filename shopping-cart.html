@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="style/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="main-header">
+    <div class="wrapper">
+        <div class="logo"><a class="logo-link" href="#"><img alt="logo" class="main-logo-img"
+                                                             src="img/main-logo.png">bran<span
+                class="pink-d">d</span></a></div>
+        <div class="search">
+            <form action="#">
+                <select class="search-dropdown" name="slct">
+                    <option value="Browse">Browse</option>
+                    <option value="option2">option2</option>
+                    <option value="option3">option3</option>
+                    <option value="option4">option4</option>
+                </select>
+            </form>
+            <form action="#"><input class="search-form" placeholder="Search for item..." type="text"></form>
+            <button class="search-button" type="submit"><i aria-hidden="true" class="fa fa-search"></i></button>
+        </div>
+        <div class="account"><a class="link-cart" href="#"><img alt="cart" src="img/cart-icon.png"></a>
+            <button
+                    class="account-button">my account<i aria-hidden="true" class="fa fa-caret-down"></i></button>
+        </div>
+    </div>
+</header>
+<hr class="header-line">
+<nav class="main-nav">
+    <div class="nav-wrapper">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-list-item"><a class="nav-link active-catalog-category-link" href="#">Man</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="#">Women</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="#">Kids</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="#">Accoseriese</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="#">Featured</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="#">Hot Deals</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <h1 class="hidden">Store. Shopping cart</h1>
+    <section class="catalog-greeting">
+        <h2 class="hidden">Catalog greeting</h2>
+        <div class="cat-gr-wrapper">
+            <p class="catalog-greeting-content">new arrival</p>
+            <ul class="catalog-greeting-breadcrumbs">
+                <li><a class="breadcrumbs-link" href="#">home</a></li>
+                <li><a class="breadcrumbs-link" href="#">men</a></li>
+                <li><a class="breadcrumbs-link br-selected" href="#">new arrivals</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="shopping-cart-content-area">
+        <h2 class="hidden">Shopping cart area</h2>
+        <div class="shopping-cart-content-area-wrapper">
+            <ul class="shopping-cart-overview">
+                <li>
+                    <ul class="shopping-cart-overview-header">
+                        <li class="shopping-cart-overview-header-item">
+                            <p class="shopping-cart-overview-header-item-name">Product Details</p>
+                        </li>
+                        <li class="shopping-cart-overview-header-item">
+                            <p class="shopping-cart-overview-header-item-name">unit Price</p>
+                        </li>
+                        <li class="shopping-cart-overview-header-item">
+                            <p class="shopping-cart-overview-header-item-name">Quantity</p>
+                        </li>
+                        <li class="shopping-cart-overview-header-item">
+                            <p class="shopping-cart-overview-header-item-name">shipping</p>
+                        </li>
+                        <li class="shopping-cart-overview-header-item">
+                            <p class="shopping-cart-overview-header-item-name">Subtotal</p>
+                        </li>
+                        <li class="shopping-cart-overview-header-item">
+                            <p class="shopping-cart-overview-header-item-name">Action</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="shopping-cart-overview-list-item">
+                    <div class="cart-product-details">
+                        <div class="cart-product-details-img-col"><img alt="p1-img" src="img/shopping-cart-p1.png"></div>
+                        <div class="cart-product-details-info-col">
+                            <p class="cart-product-details-item-header">Mango  People  T-shirt</p>
+                            <p class="cart-product-details-color">Color: <span class="product-color-value">red</span></p>
+                            <p class="cart-product-details-size">Size: <span class="product-size">XII</span></p>
+                        </div>
+                    </div>
+                    <p class="cart-product-price">$150</p>
+                    <input class="cart-product-quantity" type="number">
+                    <p class="cart-product-shipping">FREE</p>
+                    <p class="cart-product-subtotal">$300</p>
+                    <button class="cart-product-action"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                </li>
+                <li class="shopping-cart-overview-list-item">
+                    <div class="cart-product-details">
+                        <div class="cart-product-details-img-col"><img alt="p1-img" src="img/shopping-cart-p2.png"></div>
+                        <div class="cart-product-details-info-col">
+                            <p class="cart-product-details-item-header">Mango  People  T-shirt</p>
+                            <p class="cart-product-details-color">Color: <span class="product-color-value">red</span></p>
+                            <p class="cart-product-details-size">Size: <span class="product-size">XII</span></p>
+                        </div>
+                    </div>
+                    <p class="cart-product-price">$150</p>
+                    <input class="cart-product-quantity" type="number">
+                    <p class="cart-product-shipping">FREE</p>
+                    <p class="cart-product-subtotal">$300</p>
+                    <button class="cart-product-action"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                </li>
+                <li class="shopping-cart-overview-list-item">
+                    <div class="cart-product-details">
+                        <div class="cart-product-details-img-col"><img alt="p1-img" src="img/shopping-cart-p3.png"></div>
+                        <div class="cart-product-details-info-col">
+                            <p class="cart-product-details-item-header">Mango  People  T-shirt</p>
+                            <p class="cart-product-details-color"> Color: <span class="product-color-value">red</span></p>
+                            <p class="cart-product-details-size">Size: <span class="product-size">XII</span></p>
+                        </div>
+                    </div>
+                    <p class="cart-product-price">$150</p>
+                    <input class="cart-product-quantity" type="number">
+                    <p class="cart-product-shipping">FREE</p>
+                    <p class="cart-product-subtotal">$300</p>
+                    <button class="cart-product-action"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                </li>
+            </ul>
+            <div class="shopping-cart-buttons">
+                <button class="clear-shopping-cart-btn">clear shopping cart</button>
+                <button class="continue-shopping-btn">continue shopping</button>
+            </div>
+            <article class="shopping-cart-address-form">
+                <h2 class="hidden">Address form</h2>
+                <div class="shopping-cart-address-form-wrapper">
+                    <div class="shopping-cart-address-form-col">
+                        <p class="shopping-cart-address-form-header">shipping address</p>
+                        <select name="recipient-country" id="country-name" class="address-country">
+                            <option value="ru">&nbsp; Russia</option>
+                            <option value="cn">&nbsp; China</option>
+                            <option value="it">&nbsp; Italy</option>
+                        </select>
+                        <input type="text" class="address-state" placeholder="state">
+                        <input type="text" placeholder="Postcode / Zip">
+                        <button class="get-a-quote-btn">get a quote</button>
+                    </div>
+                    <div class="shopping-cart-address-form-col">
+                        <p class="shopping-cart-address-form-header">coupon discount</p>
+                        <label for="discount-coupon">Enter your code if you have one</label>
+                        <input id="discount-coupon" type="text">
+                        <button class="apply-coupon-btn">apply coupon</button>
+                    </div>
+                    <div class="shopping-cart-address-form-col">
+                        <p class="proceed-cart-subtotal">sub total <span class="subtotal-value">&nbsp;&nbsp;&nbsp;$900</span></p>
+                        <p class="proceed-cart-grand-total">grand total <span class="grand-total-value">&nbsp;&nbsp;&nbsp;$900</span></p>
+
+                        <button class="cart-proceed-btn">proceed to checkout</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="main-subscribe">
+        <h2 class="hidden">subscribe part</h2>
+        <div class="ms-wrapper">
+            <article class="s-left">
+                <h2 class="hidden">phrases photo</h2>
+                <p class="s-message"><img src="img/s-photo.png" alt="person" class="s-photo">“Vestibulum quis
+                    porttitor dui! Quisque viverra nunc mi,
+                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <p class="s-signature"><span>Bin Burhan</span> <br>
+                    Dhaka, Bd</p>
+                <ul class="s-pagination">
+                    <li><a href="#" class="s-pag-link"></a></li>
+                    <li><a href="#" class="s-pag-link spg-active"></a></li>
+                    <li><a href="#" class="s-pag-link"></a></li>
+                </ul>
+            </article>
+            <article class="s-right">
+                <h2 class="hidden">subscribe input</h2>
+                <p class="subscribe-header">subscribe<br><span class="subscribe-sub-header">for our newsletters and
+							promotion</span></p>
+                <form class="subscribe-form" action="#">
+                    <input class="subscribe-field" type="email" placeholder="enter your email"><input
+                        class="subscribe-btn" type="submit" value="Subscribe">
+                </form>
+
+            </article>
+        </div>
+    </section>
+    <section class="footer">
+        <h2 class="hidden">footer area</h2>
+        <div class="f-wrapper">
+            <article class="main-footer">
+                <h2 class="hidden">links and logo</h2>
+                <div class="f-brand">
+                    <div class="logo"><a class="logo-link" href="#"><img class="main-logo-img"
+                                                                         src="img/main-logo.png" alt="logo">bran<span class="pink-d">d</span></a></div>
+                    <p class="f-brand-content">
+                        Objectively transition extensive data rather than cross functional solutions.
+                        Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                        Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>
+                        Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies.
+                        Dynamically optimize.
+                    </p>
+                </div>
+                <div class="f-nav">
+                    <ul class="company">
+                        <li>
+                            <p class="f-header">company</p>
+                        </li>
+                        <li><a href="#" class="f-link">Home </a></li>
+                        <li><a href="#" class="f-link">Shop</a></li>
+                        <li><a href="#" class="f-link">About</a></li>
+                        <li><a href="#" class="f-link">How It Works</a></li>
+                        <li><a href="#" class="f-link">Contact</a></li>
+                    </ul>
+                    <ul class="information">
+                        <li>
+                            <p class="f-header">information</p>
+                        </li>
+                        <li><a href="#" class="f-link">Tearms & Condition</a></li>
+                        <li><a href="#" class="f-link">Privacy Policy</a></li>
+                        <li><a href="#" class="f-link">How to Buy</a></li>
+                        <li><a href="#" class="f-link">How to Sell</a></li>
+                        <li><a href="#" class="f-link">Promotion</a></li>
+                    </ul>
+                    <ul class="shop-category">
+                        <li>
+                            <p class="f-header">shop category</p>
+                        </li>
+                        <li><a href="#" class="f-link">Men</a></li>
+                        <li><a href="#" class="f-link">Women</a></li>
+                        <li><a href="#" class="f-link">Child</a></li>
+                        <li><a href="#" class="f-link">Apparel</a></li>
+                        <li><a href="#" class="f-link">Brows All</a></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="sub-footer">
+        <h2 class="hidden">sub footer area</h2>
+        <div class="sf-wrapper">
+            <p class="f-copy">&copy; 2017 Brand All Rights Reserved.</p>
+            <ul class="f-pagination">
+                <li><a href="#" class="f-pag-link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="f-pag-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="f-pag-link link-disabled"><i class="fa fa-linkedin"
+                                                                    aria-hidden="true"></i></a></li>
+                <li><a href="#" class="f-pag-link"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="f-pag-link"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+</main>
+</body>
+</html>

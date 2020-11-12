@@ -1,0 +1,113 @@
+.wrapper{
+  @include wrapper-width-and-centering;
+  height: 100px;
+  display:flex;
+  align-items: center;
+}
+.logo{
+  text-transform: uppercase;
+  display:flex;
+  align-items: center;
+}
+.main-logo-img{
+  margin-right:13px;
+}
+.logo-link{
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  font-style: normal;
+  text-align: center;
+  color: #222222;
+  font-size: 1.688rem;
+  font-weight: 300;
+}
+.pink-d{
+  color:pink;
+}
+.search{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  height: 38px;
+}
+.search *{
+  height:inherit;
+}
+.search-form{
+  width: 317px;
+  height: 36px;
+  padding:0;
+  border: 0.063rem solid #e6e6e6;
+  border-left: none;
+  padding-left:13px;
+}
+.search-form:focus{
+  outline-style: none;
+}
+.search-button{
+  width: 36px;
+  text-align: center;
+  line-height: 36px;
+  color:grey;
+  border-radius: 0 0.188rem 0.188rem 0;
+  border: 0.063rem solid #e6e6e6;
+  background-color: #ffffff;
+  border-left:none;
+}
+.search-button i:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+.search-button:focus{
+  outline-style: none;
+}
+.search-dropdown{
+  text-align: right;
+  color: #222222;
+  font-size: 0.875rem;
+  font-weight: 300;
+  border-radius: 0.188rem 0 0 0.188rem;
+  border: 0.063rem solid #e6e6e6;
+  background-color: #cdcdcc;
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  margin-left:37px;
+}
+.search-dropdown:focus{
+  outline-style: none;
+}
+.account{
+  display: flex;
+}
+.account-button{
+  margin-left:26px;
+  background-color: $main-pink-color;
+  border-style: none;
+  width: 130px;
+  height: 38px;
+  color:white;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.938rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  &:active{
+    outline-style:none;
+  }
+  &:hover{
+    box-shadow: 0 0.313rem 0.5rem rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  &:active{
+    outline-style: none;
+  }
+  & i{
+    margin-left: 8px;
+  }
+}
+.header-line{
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.17);
+  border: 0.063rem solid #ececec;
+  background-color: #ffffff;
+}
