@@ -4,6 +4,7 @@
   display:flex;
   justify-content:center;
   align-items:center;
+  margin-bottom:2px;
 }
 .nav-list{
   padding:0;
@@ -12,9 +13,110 @@
   display: flex;
   align-items: center;
 }
+.nav-list-item-hover-content{
+  display: none;
+  position: absolute;
+  flex-flow:column wrap;
+  justify-content: flex-start;
+  min-width: 846px;
+  height: 310px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  border-radius: 0.313rem;
+  background-color: #ffffff;
+  border:1px solid #eaeaea;
+  top:45px;
+}
+.nav-hover-content-pointer{
+  position: absolute;
+  border-left: 1px solid #eeeeee;
+  border-top:1px solid #eeeeee;
+  width: 15px;
+  background-color: white;
+  transform: rotate(45deg);
+  height: 15px;
+  top:-9px;
+}
+.nav-list-item-hover-content-list{
+  list-style-type: none;
+  width: 235px;
+  padding:0;
+  text-align: left;
+  margin:10px 0 0 0 ;
+}
+.nav-list-item-hover-content-list{
+  & li:not(:first-child){
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.022rem;
+    margin:10px 0;
+  }
+  & li:first-child{
+    color: #232323;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.022rem;
+    padding-bottom:8px;
+    border-bottom:1px solid #e8e8e8;
+    font-family: 'Lato Regular',SansSerif;
+  }
+  & li:last-child{
+    margin-bottom:22px;
+  }
+}
+.nav-hover-content-line-link{
+  text-decoration:none;
+  display: inline-block;
+  width: 100%;
+  color: #646464;
+  border-right:3px solid transparent;
+  &:hover{
+    font-weight: bolder;
+    border-color:$main-pink-color;
+  }
+}
+.hover-sale-promo{
+  position: relative;
+  width: 255px;
+  height: 118px;
+  & img{
+    position: absolute;
+    left:0;
+  }
+  & .hover-sale-promo-text{
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 0.034rem;
+    right:0;
+    bottom: 0;
+    margin: 0 10px 12px 0;
+    font-family: 'Lato Black',SansSerif;
+  }
+}
 .nav-list-item{
   text-align: center;
   align-items:center;
+  position: relative;
+  z-index: 1;
+  &:hover .nav-list-item-hover-content{
+    display: flex;
+  }
+}
+
+.nav-last-element:hover{
+  & .nav-hover-content-pointer{
+    top:-9px;
+    right: 260px;
+  }
+  & .nav-list-item-hover-content{
+  right:-230px;
+  flex-wrap: wrap-reverse;
+  }
 }
 .nav-link{
   text-decoration:none;
@@ -29,4 +131,9 @@
   font-size: 0.875rem;
   font-weight: 700;
   border-bottom:3px solid transparent;
+
 }
+.nav-link:hover{
+  border-bottom: 3px solid $main-pink-color;
+}
+
