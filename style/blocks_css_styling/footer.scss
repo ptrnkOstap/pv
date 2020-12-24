@@ -1,0 +1,92 @@
+.f-wrapper{
+  @include wrapper-width-and-centering;
+  margin-top:123px;
+}
+.main-footer{
+  height: 458px;
+  display: flex;
+  justify-content:center;
+}
+.f-nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.f-brand-content{
+  width: 427px;
+  margin-top:45px;
+  line-height: 24px;
+  text-align: left;
+  color: #898989;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.022rem;
+}
+.company,.information,.shop-category{
+  list-style-type: none;
+  margin:0;
+}
+.f-link{
+  text-decoration:none;
+  text-align: right;
+  color: #898989;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+  line-height: 50px;
+}
+.sub-footer{
+  background-color:#e6e6e6;
+  width: 100%;;
+}
+.sf-wrapper{
+  @include wrapper-width-and-centering;
+  height: 79px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.f-copy{
+  text-align: right;
+  color: #7a7a7a;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+}
+
+.f-header{
+  text-align: right;
+  color: $main-pink-color;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.028rem;
+  margin-bottom:45px;
+  margin-top:0;
+}
+.f-pagination{
+  list-style-type:none;;
+  display: flex;
+}
+.f-pag-link{
+  display: block;
+  text-decoration:none;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  line-height: 32px;
+  text-align: center;
+  margin-right:8px;
+  color: #b2b2b2;
+}
+.f-pag-link:hover{
+  background-color: $main-pink-color;
+  color:white;
+}
+
+.link-disabled{
+  pointer-events: none;
+  opacity: 0.7;
+  background: #CCC;
+}

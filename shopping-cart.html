@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Document</title>
-    <!--	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"-->
-    <!--		rel="stylesheet">-->
-    <!--	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"-->
+<!--          rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">-->
     <link href="style/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet" type="text/css">
+    <script src="JS/renderBasket.js" defer></script>
 </head>
-
 <body>
 <header class="main-header">
     <div class="wrapper">
-        <div class="logo"><a class="logo-link" href="#"><img alt="logo" class="main-logo-img"
+        <div class="logo"><a class="logo-link" href="index.html"><img alt="logo" class="main-logo-img"
                                                              src="img/main-logo.png">bran<span
                 class="pink-d">d</span></a></div>
         <div class="search">
@@ -63,40 +62,39 @@
             <form action="#"><input class="search-form" placeholder="Search for item..." type="text"></form>
             <button class="search-button" type="submit"><i aria-hidden="true" class="fa fa-search"></i></button>
         </div>
-        
         <div class="account">
-                <input id="header-cart-check" type="checkbox">
-                <label class="peek-cart-label" for="header-cart-check"><img alt="cart" src="img/cart-icon.png"></label>
-                <div class="header-peek-cart">
-                    <div class="header-peek-cart-pointer"></div>
-                    <div class="added-product-item">
-                        <img class="peek-product-image" src="img/peek-pic1.png" alt="prod1">
-                        <div class="peek-added-product-info">
-                            <p class="peek-product-name">rebox zane</p>
-                            <div class="peek-product-rating"><img src="img/rating-icon.png" alt="rating"></div>
-                            <p class="peek-quantity-and-price">
-                                <span class="peek-quantity">1</span> x <span class="peek-item-price">$250</span>
-                            </p>
-                        </div>
-                        <button class="peek-remove-product"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+            <input id="header-cart-check" type="checkbox">
+            <label class="peek-cart-label" for="header-cart-check"><img alt="cart" src="img/cart-icon.png"></label>
+            <div class="header-peek-cart">
+                <div class="header-peek-cart-pointer"></div>
+                <div class="added-product-item">
+                    <img class="peek-product-image" src="img/peek-pic1.png" alt="prod1">
+                    <div class="peek-added-product-info">
+                        <p class="peek-product-name">rebox zane</p>
+                        <div class="peek-product-rating"><img src="img/rating-icon.png" alt="rating"></div>
+                        <p class="peek-quantity-and-price">
+                            <span class="peek-quantity">1</span> x <span class="peek-item-price">$250</span>
+                        </p>
                     </div>
-                    <div class="added-product-item">
-                        <img class="peek-product-image" src="img/peek-pic2.png" alt="prod2">
-                        <div class="peek-added-product-info">
-                            <p class="peek-product-name">rebox zane</p>
-                            <div class="peek-product-rating"><img src="img/rating-icon.png" alt="rating"></div>
-                            <p class="peek-quantity-and-price">
-                                <span class="peek-quantity">1</span> x <span class="peek-item-price">$250</span>
-                            </p>
-                        </div>
-                        <button class="peek-remove-product"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-                    </div>
-                    <div class="added-products-summary">
-                        <p class="total-value">TOTAL<span class="added-products-summary-price">$500.00</span></p>
-                    </div>
-                    <button class="peek-cart-checkout-btn" onclick="window.location.href='checkout.html'">checkout</button>
-                    <button class="peek-cart-to-cart-btn" onclick="window.location.href='shopping-cart.html'">go to cart</button>
+                    <button class="peek-remove-product"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
                 </div>
+                <div class="added-product-item">
+                    <img class="peek-product-image" src="img/peek-pic2.png" alt="prod2">
+                    <div class="peek-added-product-info">
+                        <p class="peek-product-name">rebox zane</p>
+                        <div class="peek-product-rating"><img src="img/rating-icon.png" alt="rating"></div>
+                        <p class="peek-quantity-and-price">
+                            <span class="peek-quantity">1</span> x <span class="peek-item-price">$250</span>
+                        </p>
+                    </div>
+                    <button class="peek-remove-product"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                </div>
+                <div class="added-products-summary">
+                    <p class="total-value">TOTAL<span class="added-products-summary-price">$500.00</span></p>
+                </div>
+                <button class="peek-cart-checkout-btn" onclick="window.location.href='checkout.html'">checkout</button>
+                <button class="peek-cart-to-cart-btn" onclick="window.location.href='shopping-cart.html'">go to cart</button>
+            </div>
 
             <button
                     class="account-button">my account<i aria-hidden="true" class="fa fa-caret-down"></i></button>
@@ -524,180 +522,119 @@
     </div>
 </nav>
 <main>
-    <section class="main-promo">
-        <h2 class="hidden">Main promo banner</h2>
-        <div class="promo-wrapper">
-            <p class="promo-header"><span class="top-part">the brand</span><br>of luxerious <span
-                    class="pink-tail">fashion</span></p>
+    <h1 class="hidden">Store. Shopping cart</h1>
+    <section class="catalog-greeting">
+        <h2 class="hidden">Catalog greeting</h2>
+        <div class="cat-gr-wrapper">
+            <p class="catalog-greeting-content">new arrival</p>
+            <ul class="catalog-greeting-breadcrumbs">
+                <li><a class="breadcrumbs-link" href="index.html">home</a></li>
+                <li><a class="breadcrumbs-link" href="#">men</a></li>
+                <li><a class="breadcrumbs-link br-selected" href="#">new arrivals</a></li>
+            </ul>
         </div>
     </section>
-    <div class="main-categories">
-        <div class="cat-wrapper">
-            <div class="main-cat-col-1">
-                <a class="c-men c-link" href="#">
-                    <p class="cat-header">hot deal<br><span class="cat-pink">for men</span></p>
-                </a>
-                <a class="c-accessories c-link" href="">
-                    <p class="cat-header">luxurious<br><span class="cat-pink">accesories</span></p>
-                </a>
+    <section class="shopping-cart-content-area" id="shopping-cart-content-area">
+        <h2 class="hidden">Shopping cart area</h2>
+        <div class="shopping-cart-content-area-wrapper">
+<!--            <ul class="shopping-cart-overview">-->
+<!--                <li>-->
+<!--                    <ul class="shopping-cart-overview-header">-->
+<!--                        <li class="shopping-cart-overview-header-item">-->
+<!--                            <p class="shopping-cart-overview-header-item-name">Product Details</p>-->
+<!--                        </li>-->
+<!--                        <li class="shopping-cart-overview-header-item">-->
+<!--                            <p class="shopping-cart-overview-header-item-name">unit Price</p>-->
+<!--                        </li>-->
+<!--                        <li class="shopping-cart-overview-header-item">-->
+<!--                            <p class="shopping-cart-overview-header-item-name">Quantity</p>-->
+<!--                        </li>-->
+<!--                        <li class="shopping-cart-overview-header-item">-->
+<!--                            <p class="shopping-cart-overview-header-item-name">shipping</p>-->
+<!--                        </li>-->
+<!--                        <li class="shopping-cart-overview-header-item">-->
+<!--                            <p class="shopping-cart-overview-header-item-name">Subtotal</p>-->
+<!--                        </li>-->
+<!--                        <li class="shopping-cart-overview-header-item">-->
+<!--                            <p class="shopping-cart-overview-header-item-name">Action</p>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li class="shopping-cart-overview-list-item">-->
+<!--                    <div class="cart-product-details">-->
+<!--                        <div class="cart-product-details-img-col"><img alt="p1-img" src="img/shopping-cart-p1.png"></div>-->
+<!--                        <div class="cart-product-details-info-col">-->
+<!--                            <p class="cart-product-details-item-header">Mango  People  T-shirt</p>-->
+<!--                            <p class="cart-product-details-color">Color: <span class="product-color-value">red</span></p>-->
+<!--                            <p class="cart-product-details-size">Size: <span class="product-size">XII</span></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <p class="cart-product-price">$150</p>-->
+<!--                    <input class="cart-product-quantity" type="number">-->
+<!--                    <p class="cart-product-shipping">FREE</p>-->
+<!--                    <p class="cart-product-subtotal">$300</p>-->
+<!--                    <button class="cart-product-action"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>-->
+<!--                </li>-->
+<!--&lt;!&ndash;                <li class="shopping-cart-overview-list-item">&ndash;&gt;-->
+<!--                    <div class="cart-product-details">-->
+<!--                        <div class="cart-product-details-img-col"><img alt="p1-img" src="img/shopping-cart-p2.png"></div>-->
+<!--                        <div class="cart-product-details-info-col">-->
+<!--                            <p class="cart-product-details-item-header">Mango  People  T-shirt</p>-->
+<!--                            <p class="cart-product-details-color">Color: <span class="product-color-value">red</span></p>-->
+<!--                            <p class="cart-product-details-size">Size: <span class="product-size">XII</span></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <p class="cart-product-price">$150</p>-->
+<!--                    <input class="cart-product-quantity" type="number">-->
+<!--                    <p class="cart-product-shipping">FREE</p>-->
+<!--                    <p class="cart-product-subtotal">$300</p>-->
+<!--                    <button class="cart-product-action"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>-->
+<!--                </li>-->
+<!--                <li class="shopping-cart-overview-list-item">-->
+<!--                    <div class="cart-product-details">-->
+<!--                        <div class="cart-product-details-img-col"><img alt="p1-img" src="img/shopping-cart-p3.png"></div>-->
+<!--                        <div class="cart-product-details-info-col">-->
+<!--                            <p class="cart-product-details-item-header">Mango  People  T-shirt</p>-->
+<!--                            <p class="cart-product-details-color"> Color: <span class="product-color-value">red</span></p>-->
+<!--                            <p class="cart-product-details-size">Size: <span class="product-size">XII</span></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <p class="cart-product-price">$150</p>-->
+<!--                    <input class="cart-product-quantity" type="number">-->
+<!--                    <p class="cart-product-shipping">FREE</p>-->
+<!--                    <p class="cart-product-subtotal">$300</p>-->
+<!--                    <button class="cart-product-action"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>-->
+<!--                </li>-->
+<!--            </ul>-->
+            <div class="shopping-cart-buttons">
+                <button class="clear-shopping-cart-btn">clear shopping cart</button>
+                <button class="continue-shopping-btn">continue shopping</button>
             </div>
-            <div class="main-cat-col-2">
-                <a class="c-women c-link" href="single-page.html">
-                    <p class="cat-header">30% offer<br><span class="cat-pink">women</span></p>
-                </a>
-                <a class="c-kids c-link" href="#">
-                    <p class="cat-header">new arrivals<br><span class="cat-pink">for kids</span></p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="main-featured">
-        <div class="feat-wrapper">
-            <div class="feat-header">
-                <p class="f-main-header">Fetured Items</p>
-                <p class="f-sub-header">Shop for items based on what we featured in this week</p>
-            </div>
-            <div class="f-products">
-                <div class="f-product-card fpc-margin">
-                    <div class="hover-effect">
-                        <img alt="" class="f-h-bg" src="img/h-add-prod.png">
-                        <button class="f-h-btn"><img alt="" class="f-h-icon" src="img/cart-sm.png"><span
-                                class="fh-text">Add to Cart</span></button>
+            <article class="shopping-cart-address-form">
+                <h2 class="hidden">Address form</h2>
+                <div class="shopping-cart-address-form-wrapper">
+                    <div class="shopping-cart-address-form-col">
+                        <p class="shopping-cart-address-form-header">shipping address</p>
+                        <select name="recipient-country" id="country-name" class="address-country">
+                            <option value="ru">&nbsp; Russia</option>
+                            <option value="cn">&nbsp; China</option>
+                            <option value="it">&nbsp; Italy</option>
+                        </select>
+                        <input type="text" class="address-state" placeholder="state">
+                        <input type="text" placeholder="Postcode / Zip">
+                        <button class="get-a-quote-btn">get a quote</button>
                     </div>
-                    <img alt="product1" src="img/f-p1.png">
-                    <a class="f-product-link" href="#">
-                        <p class="f-product-header">Mango People T-shirt</p>
-                        <p class="p-price">$52.00</p>
-                    </a>
-                </div>
-                <div class="f-product-card fpc-margin">
-                    <div class="hover-effect">
-                        <img alt="" class="f-h-bg" src="img/h-add-prod.png">
-                        <button class="f-h-btn"><img alt="" class="f-h-icon" src="img/cart-sm.png"><span
-                                class="fh-text">Add to Cart</span></button>
+                    <div class="shopping-cart-address-form-col">
+                        <p class="shopping-cart-address-form-header">coupon discount</p>
+                        <label for="discount-coupon">Enter your code if you have one</label>
+                        <input id="discount-coupon" type="text" placeholder="Enter your coupon number">
+                        <button class="apply-coupon-btn">apply coupon</button>
                     </div>
-                    <img alt="product1" src="img/f-p2.png">
-                    <a class="f-product-link" href="#">
-                        <p class="f-product-header">Mango People T-shirt</p>
-                        <p class="p-price">$52.00</p>
-                    </a>
-                </div>
-                <div class="f-product-card fpc-margin">
-                    <div class="hover-effect">
-                        <img alt="" class="f-h-bg" src="img/h-add-prod.png">
-                        <button class="f-h-btn"><img alt="" class="f-h-icon" src="img/cart-sm.png"><span
-                                class="fh-text">Add to Cart</span></button>
-                    </div>
-                    <img alt="product1" src="img/f-p3.png">
-                    <a class="f-product-link" href="#">
-                        <p class="f-product-header">Mango People T-shirt</p>
-                        <p class="p-price">$52.00</p>
-                    </a>
-                </div>
-                <div class="f-product-card fpc-margin">
-                    <div class="hover-effect">
-                        <img alt="" class="f-h-bg" src="img/h-add-prod.png">
-                        <button class="f-h-btn"><img alt="" class="f-h-icon" src="img/cart-sm.png"><span
-                                class="fh-text">Add to Cart</span></button>
-                    </div>
-                    <img alt="product1" src="img/f-p4.png">
-                    <a class="f-product-link" href="#">
-                        <p class="f-product-header">Mango People T-shirt</p>
-                        <p class="p-price">$52.00</p>
-                    </a>
-                </div>
-                <div class="f-product-card fpc-margin">
-                    <div class="hover-effect">
-                        <img alt="" class="f-h-bg" src="img/h-add-prod.png">
-                        <button class="f-h-btn"><img alt="" class="f-h-icon" src="img/cart-sm.png"><span
-                                class="fh-text">Add to Cart</span></button>
-                    </div>
-                    <img alt="product1" src="img/f-p5.png">
-                    <a class="f-product-link" href="#">
-                        <p class="f-product-header">Mango People T-shirt</p>
-                        <p class="p-price">$52.00</p>
-                    </a>
-                </div>
-                <div class="f-product-card fpc-margin">
-                    <div class="hover-effect">
-                        <img alt="" class="f-h-bg" src="img/h-add-prod.png">
-                        <button class="f-h-btn"><img alt="" class="f-h-icon" src="img/cart-sm.png"><span
-                                class="fh-text">Add to Cart</span></button>
-                    </div>
-                    <img alt="product1" src="img/f-p6.png">
-                    <a class="f-product-link" href="#">
-                        <p class="f-product-header">Mango People T-shirt</p>
-                        <p class="p-price">$52.00</p>
-                    </a>
-                </div>
-                <div class="f-product-card fpc-margin">
-                    <div class="hover-effect">
-                        <img alt="" class="f-h-bg" src="img/h-add-prod.png">
-                        <button class="f-h-btn"><img alt="" class="f-h-icon" src="img/cart-sm.png"><span
-                                class="fh-text">Add to Cart</span></button>
-                    </div>
-                    <img alt="product1" src="img/f-p7.png">
-                    <a class="f-product-link" href="#">
-                        <p class="f-product-header">Mango People T-shirt</p>
-                        <p class="p-price">$52.00</p>
-                    </a>
-                </div>
-                <div class="f-product-card fpc-margin">
-                    <div class="hover-effect">
-                        <img alt="" class="f-h-bg" src="img/h-add-prod.png">
-                        <button class="f-h-btn"><img alt="" class="f-h-icon" src="img/cart-sm.png"><span
-                                class="fh-text">Add to Cart</span></button>
-                    </div>
-                    <img alt="product1" src="img/f-8.png">
-                    <a class="f-product-link" href="#">
-                        <p class="f-product-header">Mango People T-shirt</p>
-                        <p class="p-price">$52.00</p>
-                    </a>
-                </div>
-            </div>
-            <button class="pink-btn">browse all products<i aria-hidden="true"
-                                                           class="fa fa-long-arrow-right"></i></button>
-        </div>
-    </div>
-    <!-- hw1 -->
-    <section class="main-discount">
-        <h2 class="hidden">discount promo offer</h2>
-        <div class="main-d-wrapper">
-            <a href="#">
-                <article class="d-1st-col">
-                    <video autoplay class="very-angry" height="300" loop muted src="video/starwing.mp4"
-                           width="200"></video>
-                    <h2 class="hidden">discount promo picture</h2>
-                    <img alt="women-discount" class="women-d-image" src="img/discount.png">
-                    <p class="women-d-header">30% <span class="dh-pink-part">offer</span><br><span
-                            class="d-women-header-tail">for women</span></p>
-                </article>
-            </a>
-            <article class="d-2nd-col">
-                <h2 class="hidden">discount promo pros</h2>
-                <div class="d-inner-col1">
-                    <div class="d-icons"><img alt="" src="img/d-car.svg"></div>
-                    <div class="d-icons"><img alt="" src="img/d-percent.svg"></div>
-                    <div class="d-icons"><img alt="" src="img/d-crown.svg"></div>
-                </div>
-                <div class="d-inner-col2">
-                    <div class="pros">
-                        <p class="pros-header">Free Delivery</p>
-                        <p class="pros-content">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov
-                            tion with extensive models.</p>
-                    </div>
-                    <div class="pros">
-                        <p class="pros-header">Sales & discounts</p>
-                        <p class="pros-content">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov
-                            tion with extensive models.</p>
-                    </div>
-                    <div class="pros">
-                        <p class="pros-header">Quality assurance</p>
-                        <p class="pros-content">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov
-                            tion with extensive models.</p>
+                    <div class="shopping-cart-address-form-col">
+                        <p class="proceed-cart-subtotal">sub total <span class="subtotal-value">&nbsp;&nbsp;&nbsp;$900</span></p>
+                        <p class="proceed-cart-grand-total">grand total <span class="grand-total-value">&nbsp;&nbsp;&nbsp;$900</span></p>
+
+                        <button class="cart-proceed-btn" onclick="window.location.href='checkout.html';">proceed to checkout</button>
                     </div>
                 </div>
             </article>
@@ -709,23 +646,23 @@
     <div class="ms-wrapper">
         <article class="s-left">
             <h2 class="hidden">phrases photo</h2>
-            <p class="s-message"><img alt="person" class="s-photo" src="img/s-photo.png">“Vestibulum quis
+            <p class="s-message"><img src="img/s-photo.png" alt="person" class="s-photo">“Vestibulum quis
                 porttitor dui! Quisque viverra nunc mi,
                 a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
             <p class="s-signature"><span>Bin Burhan</span> <br>
                 Dhaka, Bd</p>
             <ul class="s-pagination">
-                <li><a class="s-pag-link" href="#"></a></li>
-                <li><a class="s-pag-link spg-active" href="#"></a></li>
-                <li><a class="s-pag-link" href="#"></a></li>
+                <li><a href="#" class="s-pag-link"></a></li>
+                <li><a href="#" class="s-pag-link spg-active"></a></li>
+                <li><a href="#" class="s-pag-link"></a></li>
             </ul>
         </article>
         <article class="s-right">
             <h2 class="hidden">subscribe input</h2>
             <p class="subscribe-header">subscribe<br><span class="subscribe-sub-header">for our newsletters and
 							promotion</span></p>
-            <form action="#" class="subscribe-form">
-                <input class="subscribe-field" placeholder="enter your email" type="email"><input
+            <form class="subscribe-form" action="#">
+                <input class="subscribe-field" type="email" placeholder="enter your email"><input
                     class="subscribe-btn" type="submit" value="Subscribe">
             </form>
 
@@ -738,10 +675,8 @@
         <article class="main-footer">
             <h2 class="hidden">links and logo</h2>
             <div class="f-brand">
-                <div class="logo"><a class="logo-link" href="#"><img alt="logo"
-                                                                     class="main-logo-img"
-                                                                     src="img/main-logo.png">bran<span
-                        class="pink-d">d</span></a></div>
+                <div class="logo"><a class="logo-link" href="#"><img class="main-logo-img"
+                                                                     src="img/main-logo.png" alt="logo">bran<span class="pink-d">d</span></a></div>
                 <p class="f-brand-content">
                     Objectively transition extensive data rather than cross functional solutions.
                     Monotonectally syndicate multidisciplinary materials before go forward benefits.
@@ -756,31 +691,31 @@
                     <li>
                         <p class="f-header">company</p>
                     </li>
-                    <li><a class="f-link" href="#">Home </a></li>
-                    <li><a class="f-link" href="#">Shop</a></li>
-                    <li><a class="f-link" href="#">About</a></li>
-                    <li><a class="f-link" href="#">How It Works</a></li>
-                    <li><a class="f-link" href="#">Contact</a></li>
+                    <li><a href="#" class="f-link">Home </a></li>
+                    <li><a href="#" class="f-link">Shop</a></li>
+                    <li><a href="#" class="f-link">About</a></li>
+                    <li><a href="#" class="f-link">How It Works</a></li>
+                    <li><a href="#" class="f-link">Contact</a></li>
                 </ul>
                 <ul class="information">
                     <li>
                         <p class="f-header">information</p>
                     </li>
-                    <li><a class="f-link" href="#">Tearms & Condition</a></li>
-                    <li><a class="f-link" href="#">Privacy Policy</a></li>
-                    <li><a class="f-link" href="#">How to Buy</a></li>
-                    <li><a class="f-link" href="#">How to Sell</a></li>
-                    <li><a class="f-link" href="#">Promotion</a></li>
+                    <li><a href="#" class="f-link">Tearms & Condition</a></li>
+                    <li><a href="#" class="f-link">Privacy Policy</a></li>
+                    <li><a href="#" class="f-link">How to Buy</a></li>
+                    <li><a href="#" class="f-link">How to Sell</a></li>
+                    <li><a href="#" class="f-link">Promotion</a></li>
                 </ul>
                 <ul class="shop-category">
                     <li>
                         <p class="f-header">shop category</p>
                     </li>
-                    <li><a class="f-link" href="#">Men</a></li>
-                    <li><a class="f-link" href="#">Women</a></li>
-                    <li><a class="f-link" href="#">Child</a></li>
-                    <li><a class="f-link" href="#">Apparel</a></li>
-                    <li><a class="f-link" href="#">Brows All</a></li>
+                    <li><a href="#" class="f-link">Men</a></li>
+                    <li><a href="#" class="f-link">Women</a></li>
+                    <li><a href="#" class="f-link">Child</a></li>
+                    <li><a href="#" class="f-link">Apparel</a></li>
+                    <li><a href="#" class="f-link">Brows All</a></li>
                 </ul>
             </div>
         </article>
@@ -791,15 +726,14 @@
     <div class="sf-wrapper">
         <p class="f-copy">&copy; 2017 Brand All Rights Reserved.</p>
         <ul class="f-pagination">
-            <li><a class="f-pag-link" href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
-            <li><a class="f-pag-link" href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
-            <li><a class="f-pag-link link-disabled" href="#"><i aria-hidden="true"
-                                                                class="fa fa-linkedin"></i></a></li>
-            <li><a class="f-pag-link" href="#"><i aria-hidden="true" class="fa fa-pinterest"></i></a></li>
-            <li><a class="f-pag-link" href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="f-pag-link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="f-pag-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="f-pag-link link-disabled"><i class="fa fa-linkedin"
+                                                                aria-hidden="true"></i></a></li>
+            <li><a href="#" class="f-pag-link"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="f-pag-link"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
         </ul>
     </div>
 </section>
 </body>
-
 </html>
